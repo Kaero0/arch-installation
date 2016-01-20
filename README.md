@@ -14,6 +14,8 @@ We assume:
 # Steps for installation
 
 ```sh
+loadkeys es
+
 wget https://raw.githubusercontent.com/Lajto/arch-installation/master/01_archiso.sh
 
 sh 01_archiso.sh
