@@ -14,17 +14,13 @@ We assume:
 # Steps for installation
 
 ```sh
-git clone https://github.com/Lajto/arch-installation
-
-cd arch-installation
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/01_archiso.sh
 
 sh 01_archiso.sh
 
 arch-chroot /mnt /bin/bash
 
-git clone https://github.com/Lajto/arch-installation
-
-cd arch-installation
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/02_chroot.sh
 
 sh 02_chroot.sh
 
