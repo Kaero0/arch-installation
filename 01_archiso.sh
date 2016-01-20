@@ -20,7 +20,10 @@ mkdir -p /mnt/boot
 mount /dev/sda1 /mnt/boot
 
 ## Install base and base-devel packages
-pacstrap -i /mnt base base-devel
+pacstrap /mnt base base-devel
+pacstrap /mnt grub-bios
+pacstrap /mnt networkmanager
+pacstrap /mnt xf86-input-synaptics
 
 ## Generate a fstab file
 genfstab -U /mnt > /mnt/etc/fstab
