@@ -1,12 +1,4 @@
-## We assume:
-## - 64 bits
-## - BIOS system
-## - Spanish language and keyboard
-## - Wired Internet
-## - sda disk
-##     - sda1 as /boot
-##     - sda2 as /
-##     - sda3 as swap
+
 
 # Spanish keyboard (not persistent)
 loadkeys es
