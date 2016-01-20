@@ -1,8 +1,5 @@
 
 
-# Spanish keyboard (not persistent)
-loadkeys es
-
 # Better font to console
 setfont lat9w-16
 
