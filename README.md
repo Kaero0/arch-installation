@@ -20,6 +20,8 @@ wget https://raw.githubusercontent.com/Lajto/arch-installation/master/01_archiso
 
 sh 01_archiso.sh
 
+rm 01_archiso.sh
+
 arch-chroot /mnt /bin/bash
 
 sudo pacman -S wget
@@ -28,15 +30,23 @@ wget https://raw.githubusercontent.com/Lajto/arch-installation/master/02_chroot.
 
 sh 02_chroot.sh
 
+rm 02_chroot.sh
+
 exit
 
-umount -R /mnt
+umount -R /mnt/{boot,}
 
 reboot
 ```
 
 # Steps for postinstallation
 
+Nos conectamos con el usuario root.
+
 ```sh
-#
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/03_chroot.sh
+
+sh 03_chroot.sh
+
+rm 03_chroot.sh
 ```
