@@ -19,14 +19,12 @@ hwclock --systohc --utc
 mkinitcpio -p linux
 
 # GRUB
-pacman -S grub os-prober intel-ucode
+pacman -S os-prober intel-ucode
 grub-install --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Network
 echo "arch-pc" >> /etc/hostname
-systemctl enable dhcpcd@enp0s3.service
-#pacman -S iw wpa_supplicant dialog
 
 # Root password
 passwd
