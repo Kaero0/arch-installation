@@ -22,6 +22,8 @@ sh 01_archiso.sh
 
 arch-chroot /mnt /bin/bash
 
+sudo pacman -S wget
+
 wget https://raw.githubusercontent.com/Lajto/arch-installation/master/02_chroot.sh
 
 sh 02_chroot.sh
