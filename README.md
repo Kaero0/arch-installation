@@ -46,6 +46,8 @@ Nos conectamos con el usuario root.
 ```sh
 wget https://raw.githubusercontent.com/Lajto/arch-installation/master/03_post.sh
 
+## Antes hay que sustituir "lajto" en el archivo por tu nombre de usuario
+## (el editor nano nos vale: nano 03_post.sh)
 sh 03_post.sh
 
 rm 03_post.sh
@@ -53,7 +55,7 @@ rm 03_post.sh
 reboot
 ```
 
-Nos conectamos con el usuario lajto.
+Nos conectamos con el usuario normal.
 
 ```sh
 wget https://raw.githubusercontent.com/Lajto/arch-installation/master/04_user.sh
