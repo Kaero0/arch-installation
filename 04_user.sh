@@ -4,6 +4,7 @@
 #sudo nmcli dev wifi connect "SSID" password "contraseña"
 
 # Pacman configuration
+sudo echo "" >> /etc/pacman.conf
 sudo echo "Color" >> /etc/pacman.conf
 sudo echo "" >> /etc/pacman.conf
 sudo echo "[multilib]" >> /etc/pacman.conf
@@ -29,3 +30,25 @@ sudo pacman -S lsdvd libdvbpsi libdvdread libdvdnav
 
 # HP
 sudo pacman -S hplip
+
+# Xorg
+sudo pacman -S xorg-server xorg-xinit xorg-utils xorg-server-utils mesa mesa-demos
+
+# NVIDIA drivers
+sudo pacman -S nvidia nvidia-libgl nvidia-utils opencl-nvidia lib32-nvidia-libgl lib32-nvidia-utils lib32-opencl-nvidia libvdpau libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau
+
+# NVIDIA 340 drivers
+sudo pacman -S nvidia-340xx nvidia-340xx-libgl nvidia-340xx-utils opencl-nvidia-340xx lib32-nvidia-340xx-libgl lib32-nvidia-340xx-utils lib32-opencl-nvidia-340xx libvdpau libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau
+
+# NVIDIA Optimus (replace "lajto")
+sudo pacman -S bumblebee mesa xf86-video-intel nvidia virtualgl lib32-virtualgl lib32-nvidia-utils lib32-mesa-libgl libvdpau libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau
+gpasswd -a lajto bumblebee
+sudo systemctl enable bumblebeed.service
+
+# ATI (Radeon)
+sudo pacman -S xf86-video-ati
+
+# Intel
+sudo pacman -S xf86-video-intel
+
+
