@@ -40,13 +40,14 @@ reboot
 Nos conectamos con el usuario root.
 
 ```sh
-wget -O root.sh http://bit.ly/1ZPe3Ke #https://raw.githubusercontent.com/Lajto/arch-installation/master/root.sh
+# Internet
+systemctl start NetworkManager.service
+systemctl enable NetworkManager.service
 
-## Antes hay que sustituir "lajto" en el archivo por tu nombre de usuario
-## (el editor nano nos vale: nano root.sh)
-sh root.sh
-
-rm root.sh
+# User settings (replace "lajto" with your user name)
+useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner -s /bin/bash lajto
+passwd lajto
+echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 reboot
 ```
