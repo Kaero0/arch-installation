@@ -49,6 +49,16 @@ useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner 
 passwd lajto
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
+# Pacman configuration
+sudo echo "" >> /etc/pacman.conf
+sudo echo "Color" >> /etc/pacman.conf
+sudo echo "" >> /etc/pacman.conf
+sudo echo "[multilib]" >> /etc/pacman.conf
+sudo echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+
+# Update
+sudo pacman -Syu
+
 reboot
 ```
 
