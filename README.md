@@ -16,15 +16,13 @@ We assume:
 ```sh
 loadkeys es
 
-wget http://bit.ly/1nq2Yy8 #https://raw.githubusercontent.com/Lajto/arch-installation/master/archiso.sh
+wget -O archiso.sh http://bit.ly/1nq2Yy8 #https://raw.githubusercontent.com/Lajto/arch-installation/master/archiso.sh
 
 sh archiso.sh
 
-rm archiso.sh
-
 arch-chroot /mnt /bin/bash
 
-wget http://bit.ly/1UephBb #https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
+wget -O chroot.sh http://bit.ly/1UephBb #https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
 
 sh chroot.sh
 
@@ -42,7 +40,7 @@ reboot
 Nos conectamos con el usuario root.
 
 ```sh
-wget http://bit.ly/1ZPe3Ke #https://raw.githubusercontent.com/Lajto/arch-installation/master/root.sh
+wget -O root.sh http://bit.ly/1ZPe3Ke #https://raw.githubusercontent.com/Lajto/arch-installation/master/root.sh
 
 ## Antes hay que sustituir "lajto" en el archivo por tu nombre de usuario
 ## (el editor nano nos vale: nano root.sh)
@@ -56,7 +54,7 @@ reboot
 Nos conectamos con el usuario normal.
 
 ```sh
-wget http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
+wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
 
 make user-things
 
