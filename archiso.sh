@@ -24,6 +24,7 @@ pacstrap /mnt base base-devel
 pacstrap /mnt grub-bios
 pacstrap /mnt networkmanager
 pacstrap /mnt xf86-input-synaptics
+pacstrap /mnt wget
 
 ## Generate a fstab file
 genfstab -U /mnt > /mnt/etc/fstab
