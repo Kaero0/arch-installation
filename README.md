@@ -24,6 +24,7 @@ arch-chroot /mnt /bin/bash
 
 wget -O chroot.sh http://bit.ly/1UephBb #https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
 
+## Replace the two "lajto" to your username with: nano chroot.sh
 sh chroot.sh
 
 rm chroot.sh
@@ -36,23 +37,6 @@ reboot
 ```
 
 # Steps for postinstallation
-
-Nos conectamos con el usuario root.
-
-```sh
-# Internet
-systemctl start NetworkManager.service
-systemctl enable NetworkManager.service
-
-# User settings (replace "lajto" with your user name)
-useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner -s /bin/bash lajto
-passwd lajto
-echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
-
-reboot
-```
-
-Nos conectamos con el usuario normal.
 
 ```sh
 wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
