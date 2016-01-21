@@ -5,7 +5,6 @@ We assume:
 - 64 bits Intel CPU
 - BIOS system
 - Spanish language and keyboard
-- Wired Internet (enp0s3)
 - sda disk
     - sda1 as /boot
     - sda2 as /
