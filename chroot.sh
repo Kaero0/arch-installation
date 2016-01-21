@@ -18,6 +18,13 @@ hwclock --systohc --utc
 # mkinitcpio
 mkinitcpio -p linux
 
+# Pacman configuration
+sudo echo "" >> /etc/pacman.conf
+sudo echo "Color" >> /etc/pacman.conf
+sudo echo "" >> /etc/pacman.conf
+sudo echo "[multilib]" >> /etc/pacman.conf
+sudo echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+
 # GRUB
 pacman -S os-prober intel-ucode
 grub-install --recheck /dev/sda
