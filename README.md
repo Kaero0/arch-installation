@@ -16,21 +16,19 @@ We assume:
 ```sh
 loadkeys es
 
-wget https://raw.githubusercontent.com/Lajto/arch-installation/master/01_archiso.sh
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/archiso.sh
 
-sh 01_archiso.sh
+sh archiso.sh
 
-rm 01_archiso.sh
+rm archiso.sh
 
 arch-chroot /mnt /bin/bash
 
-sudo pacman -S wget
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
 
-wget https://raw.githubusercontent.com/Lajto/arch-installation/master/02_chroot.sh
+sh chroot.sh
 
-sh 02_chroot.sh
-
-rm 02_chroot.sh
+rm chroot.sh
 
 exit
 
@@ -58,9 +56,21 @@ reboot
 Nos conectamos con el usuario normal.
 
 ```sh
-wget https://raw.githubusercontent.com/Lajto/arch-installation/master/04_user.sh
+wget https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
 
-sh 04_user.sh
+make user-things
 
-rm 04_user.sh
+## Choose your graphic card driver
+make nvidia
+make nvidia-340
+make nvidia-optimus
+make nouveau
+make ati-radeon
+make intel
+
+## Choose your desktop environment
+make deepin
+make gnome
 ```
+
+Done!
