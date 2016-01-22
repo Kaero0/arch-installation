@@ -51,5 +51,14 @@ useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner 
 passwd lajto
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
+# More things
+if [ ! -f /tmp/foo.txt ]; then
+    echo 'HARDWARECLOCK=UTC' >> /etc/rc.conf
+    echo 'TIMEZONE=Europe/Madrid' >> /etc/rc.conf
+    echo 'KEYMAP=es' >> /etc/rc.conf
+    echo 'LOCALE=es_ES.UTF-8' >> /etc/rc.conf
+    echo 'USECOLOR=yes' >> /etc/rc.conf
+fi
+
 # Root password
 passwd
