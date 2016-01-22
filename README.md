@@ -62,6 +62,8 @@ make apps
 make games
 
 make wine-games ## Graphics > Capture the mouse in full screen
+
+rm Makefile
 ```
 
 Done!
