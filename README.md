@@ -38,6 +38,7 @@ reboot
 # Steps for postinstallation
 
 ```sh
+## Replace the username "lajto" in the Makefile
 wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
 
 make user-things
@@ -53,6 +54,7 @@ make intel
 ## Choose your desktop environment
 make deepin
 make gnome
+make mate
 make kde
 ```
 
