@@ -53,6 +53,7 @@ make intel
 ## Choose your desktop environment
 make deepin
 make gnome
+make kde
 ```
 
 ```sh
