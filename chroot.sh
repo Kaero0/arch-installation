@@ -19,11 +19,17 @@ hwclock --systohc --utc
 mkinitcpio -p linux
 
 # Pacman configuration
-sudo echo "" >> /etc/pacman.conf
-sudo echo "Color" >> /etc/pacman.conf
-sudo echo "" >> /etc/pacman.conf
-sudo echo "[multilib]" >> /etc/pacman.conf
-sudo echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+echo "" >> /etc/pacman.conf
+echo "Color" >> /etc/pacman.conf
+echo "" >> /etc/pacman.conf
+echo "[multilib]" >> /etc/pacman.conf
+echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+echo "" >> /etc/pacman.conf
+echo "[infinality-bundle]" >> /etc/pacman.conf
+echo "Server = http://bohoomil.com/repo/$arch" >> /etc/pacman.conf
+echo "" >> /etc/pacman.conf
+echo "[infinality-bundle-multilib]" >> /etc/pacman.conf
+echo "Server = http://bohoomil.com/repo/multilib/$arch" >> /etc/pacman.conf
 
 # GRUB
 pacman -S os-prober intel-ucode
