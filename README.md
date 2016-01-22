@@ -55,4 +55,12 @@ make deepin
 make gnome
 ```
 
+```sh
+make apps
+
+make games
+
+make wine-games ## Graphics > Capture the mouse in full screen
+```
+
 Done!
