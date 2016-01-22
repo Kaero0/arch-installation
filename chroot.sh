@@ -30,9 +30,13 @@ echo "Server = http://bohoomil.com/repo/$arch" >> /etc/pacman.conf
 echo "" >> /etc/pacman.conf
 echo "[infinality-bundle-multilib]" >> /etc/pacman.conf
 echo "Server = http://bohoomil.com/repo/multilib/$arch" >> /etc/pacman.conf
+pacman-key -r 962DDE58
+pacman-key --lsign-key 962DDE58
+pacman -Syu --noconfirm
+pacman -S infinality-bundle infinality-bundle-multilib
 
 # GRUB
-pacman -S os-prober intel-ucode
+pacman -S --noconfirm os-prober intel-ucode
 grub-install --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
