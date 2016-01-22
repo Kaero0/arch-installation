@@ -52,10 +52,10 @@ make ati-radeon
 make intel
 
 ## Choose your desktop environment
-make deepin
+make deepin # not ready yet
 make gnome
 make mate
-make kde
+make kde # not ready yet
 ```
 
 ```sh
