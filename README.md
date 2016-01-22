@@ -40,8 +40,6 @@ reboot
 ```sh
 wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
 
-wget -O 10-keyboard.conf http://bit.ly/1P8yECo #https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
-
 make user-things
 
 ## Choose your graphic card driver
