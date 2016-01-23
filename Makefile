@@ -33,7 +33,6 @@ user-things:
 	mkdir -p /home/$(USER_NAME)/.ttf-ms-fonts-folder
 	cd /home/$(USER_NAME)/.ttf-ms-fonts-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/ttf-ms-fonts.tar.gz; tar zxf ttf-ms-fonts.tar.gz; cd ttf-ms-fonts; makepkg -cs; sudo pacman -U --noconfirm ttf-ms-font*.pkg.tar.xz; cd /home/$(USER_NAME)
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-	sudo pacman -S --noconfirm infinality-bundle infinality-bundle-multilib
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
 	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
