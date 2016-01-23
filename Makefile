@@ -1,6 +1,6 @@
 
-.SILENT: user-things nvidia nvidia-340 nvidia-optimus nouveau ati-radeon intel deepin gnome mate kde apps games wine-games
-.PHONY: user-things nvidia nvidia-340 nvidia-optimus nouveau ati-radeon intel deepin gnome mate kde apps games wine-games
+.SILENT: user-things nvidia nvidia-340 nvidia-optimus nouveau ati-radeon intel virtualbox deepin gnome mate kde apps games wine-games
+.PHONY: user-things nvidia nvidia-340 nvidia-optimus nouveau ati-radeon intel virtualbox deepin gnome mate kde apps games wine-games
 
 
 
