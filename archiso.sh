@@ -32,7 +32,7 @@ genfstab -U /mnt > /mnt/etc/fstab
 # chroot
 wget -O chroot.sh https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
 nano chroot.sh ## Replace "lajto" to your username
-arch-chroot /mnt chroot.sh
+cat chroot.sh | arch-chroot /mnt
 rm chroot.sh
 
 # Umount
