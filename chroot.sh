@@ -20,7 +20,7 @@ mkinitcpio -p linux
 
 # Pacman configuration
 sed  -i  's/#Color/Color/' /etc/pacman.conf
-sed  -i  's/#[multilib]/[multilib]/' /etc/pacman.conf
+sed  -i  's/#\[multilib\]/\[multilib\]/' /etc/pacman.conf
 sed  -i  's/#Include = \/etc\/pacman.d\/mirrorlist/Include = \/etc\/pacman.d\/mirrorlist/' /etc/pacman.conf
 echo "" >> /etc/pacman.conf
 echo "[infinality-bundle]" >> /etc/pacman.conf
