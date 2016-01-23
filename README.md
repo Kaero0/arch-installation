@@ -17,16 +17,16 @@ loadkeys es
 
 wget -O archiso.sh http://bit.ly/1nq2Yy8 #https://raw.githubusercontent.com/Lajto/arch-installation/master/archiso.sh
 
-## When nano opens chroot.sh, replace "lajto" to your username in the two lines of useradd
 sh archiso.sh
 
 arch-chroot /mnt /bin/bash
 
-wget -O archiso.sh http://bit.ly/1UephBb #https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
+## Replace "lajto" to your username in the two lines of useradd using: nano chroot.sh
+wget -O chroot.sh http://bit.ly/1UephBb #https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
 
-sh archiso.sh
+sh chroot.sh
 
-rm archiso.sh
+rm chroot.sh
 
 exit
 
@@ -40,7 +40,7 @@ reboot
 Use your normal user.
 
 ```sh
-## Replace the username "lajto" in the Makefile
+## Replace the username "lajto" in $(USER_NAME): nano Makefile
 wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
 
 make user-things
@@ -58,13 +58,13 @@ make virtualbox
 sudo pacman -S infinality-bundle infinality-bundle-multilib
 
 ## Choose your desktop environment
-make deepin # not ready yet
+make deepin # not ready (bugs)
 make gnome
 make mate
-make kde # not ready yet
+make kde # not ready (too much packages)
 ```
 
-Then, using a your favourite desktop environment:
+Then, using your favourite desktop environment:
 
 ```sh
 make apps
