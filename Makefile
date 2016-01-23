@@ -15,7 +15,7 @@ user-things:
 	sudo pacman -Syu --noconfirm
 	# Useful things
 	sudo pacman -S --noconfirm wget nano make libxml2 lib32-libxml2 git \
-	mercurial lm_sensors multilib-devel ntfs-3g android-tools android-udev
+	mercurial lm_sensors ntfs-3g android-tools android-udev
 	# Compression tools
 	sudo pacman -S --noconfirm unrar p7zip zip unzip
 	# Xorg
