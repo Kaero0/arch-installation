@@ -74,6 +74,8 @@ make games
 make wine-games ## Graphics > Capture the mouse in full screen
 
 rm Makefile
+
+sudo reboot
 ```
 
 Done!
