@@ -52,6 +52,7 @@ make nvidia-optimus
 make nouveau
 make ati-radeon
 make intel
+make virtualbox
 
 ## Respond "yes" to conflicts
 sudo pacman -S infinality-bundle infinality-bundle-multilib
