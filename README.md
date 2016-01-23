@@ -37,6 +37,8 @@ reboot
 
 # Steps for postinstallation
 
+Use your normal user.
+
 ```sh
 ## Replace the username "lajto" in the Makefile
 wget -O Makefile http://bit.ly/1nARoQD #https://raw.githubusercontent.com/Lajto/arch-installation/master/Makefile
