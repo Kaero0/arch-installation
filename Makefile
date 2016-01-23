@@ -31,13 +31,7 @@ user-things:
 	ttf-ubuntu-font-family ttf-gentium noto-fonts artwiz-fonts \
 	otf-fira-mono otf-fira-sans ttf-fira-mono ttf-fira-sans wqy-zenhei
 	mkdir -p /home/$(USER_NAME)/.ttf-ms-fonts-folder
-	cd /home/$(USER_NAME)/.ttf-ms-fonts-folder
-	wget https://aur.archlinux.org/cgit/aur.git/snapshot/ttf-ms-fonts.tar.gz
-	tar zxf ttf-ms-fonts.tar.gz
-	cd ttf-ms-fonts
-	makepkg -cs
-	sudo pacman -U --noconfirm ttf-ms-font*.pkg.tar.xz
-	cd /home/$(USER_NAME)
+	cd /home/$(USER_NAME)/.ttf-ms-fonts-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/ttf-ms-fonts.tar.gz; tar zxf ttf-ms-fonts.tar.gz; cd ttf-ms-fonts; makepkg -cs; sudo pacman -U --noconfirm ttf-ms-font*.pkg.tar.xz; cd /home/$(USER_NAME)
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	pacman -S --noconfirm infinality-bundle infinality-bundle-multilib
 	# Audio
@@ -49,21 +43,9 @@ user-things:
 	gst-plugins-ugly libmatroska ffmpeg ffmpeg2theora ffmpegthumbnailer \
 	ffmpegthumbs xvidcore
 	mkdir -p /home/$(USER_NAME)/.libde265-folder
-	cd /home/$(USER_NAME)/.libde265-folder
-	wget https://aur.archlinux.org/cgit/aur.git/snapshot/libde265.tar.gz
-	tar zxf libde265.tar.gz
-	cd libde265
-	makepkg -cs
-	sudo pacman -U --noconfirm libde*.pkg.tar.xz
-	cd /home/$(USER_NAME)
+	cd /home/$(USER_NAME)/.libde265-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/libde265.tar.gz; tar zxf libde265.tar.gz; cd libde265; makepkg -cs; sudo pacman -U --noconfirm libde*.pkg.tar.xz; cd /home/$(USER_NAME)
 	mkdir -p /home/$(USER_NAME)/.gst-plugin-libde265-folder
-	cd /home/$(USER_NAME)/.gst-plugin-libde265-folder
-	wget https://aur.archlinux.org/cgit/aur.git/snapshot/gst-plugin-libde265.tar.gz
-	tar zxf gst-plugin-libde265.tar.gz
-	cd gst-plugin-libde265
-	makepkg -cs
-	sudo pacman -U --noconfirm gst-plugin-libde*.pkg.tar.xz
-	cd /home/$(USER_NAME)
+	cd /home/$(USER_NAME)/.gst-plugin-libde265-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/gst-plugin-libde265.tar.gz; tar zxf gst-plugin-libde265.tar.gz; cd gst-plugin-libde265; makepkg -cs; sudo pacman -U --noconfirm gst-plugin-libde*.pkg.tar.xz; cd /home/$(USER_NAME)
 	# CD/DVD
 	sudo pacman -S --noconfirm lsdvd libdvbpsi libdvdread libdvdnav
 	# HP
@@ -163,13 +145,7 @@ mate:
 	sudo systemctl enable lightdm.service
 	# Single-icon windows in panel
 	mkdir -p /home/$(USER_NAME)/.mate-applet-dock-folder
-	cd /home/$(USER_NAME)/.mate-applet-dock-folder
-	wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz
-	tar zxf mate-applet-dock-git.tar.gz
-	cd mate-applet-dock-git
-	makepkg -cs
-	sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz
-	cd /home/$(USER_NAME)
+	cd /home/$(USER_NAME)/.mate-applet-dock-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz; tar zxf mate-applet-dock-git.tar.gz; cd mate-applet-dock-git; makepkg -cs; sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz; cd /home/$(USER_NAME)
 	# More apps for Mate
 	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
 	# Reboot
