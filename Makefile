@@ -171,6 +171,8 @@ mate:
 	cd /home/$(USER_NAME)
 	# More apps for Mate
 	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
+	# Reboot
+	sudo reboot
 
 ## Not done yet
 kde:
