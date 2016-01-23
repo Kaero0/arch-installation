@@ -28,15 +28,3 @@ pacstrap /mnt wget
 
 ## Generate a fstab file
 genfstab -U /mnt > /mnt/etc/fstab
-
-# chroot
-wget -O chroot.sh https://raw.githubusercontent.com/Lajto/arch-installation/master/chroot.sh
-nano chroot.sh ## Replace "lajto" to your username
-cat chroot.sh | arch-chroot /mnt
-rm chroot.sh
-
-# Umount
-umount -R /mnt/{boot,}
-
-# Reboot
-reboot
