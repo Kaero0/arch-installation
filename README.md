@@ -53,6 +53,8 @@ make nouveau
 make ati-radeon
 make intel
 
+sudo pacman -S infinality-bundle infinality-bundle-multilib
+
 ## Choose your desktop environment
 make deepin # not ready yet
 make gnome
