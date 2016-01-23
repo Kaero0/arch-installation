@@ -48,7 +48,7 @@ passwd lajto
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
 # More things
-if [ ! -f /tmp/foo.txt ]; then
+if [ ! -f /etc/rc.conf ]; then
     echo 'HARDWARECLOCK=UTC' >> /etc/rc.conf
     echo 'TIMEZONE=Europe/Madrid' >> /etc/rc.conf
     echo 'KEYMAP=es' >> /etc/rc.conf
