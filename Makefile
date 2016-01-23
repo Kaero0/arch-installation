@@ -168,13 +168,7 @@ apps:
 	sudo pacman -S --noconfirm firefox firefox-i18n-es-es lib32-flashplugin \
 	flashplugin skype easytag libreoffice-fresh libreoffice-fresh-es mypaint \
 	gimp gimp-help-es pinta calligra-krita inkscape gparted audacity blender \
-	mpv subtitleeditor synfigstudio
-	# Telegram
-	wget -O telegram.tar.xz https://tdesktop.com/linux
-	tar Jxvf telegram.tar.xz
-	rm telegram.tar.xz
-	mv Telegram ~/.telegram-folder
-	~/.telegram-folder/Telegram
+	mpv subtitleeditor synfigstudio cutegram
 
 games:
 	# Libre games
