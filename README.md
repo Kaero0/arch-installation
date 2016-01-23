@@ -79,3 +79,7 @@ sudo reboot
 ```
 
 Done!
+
+# Graphical configuration (MATE)
+
+# Graphical configuration (GNOME)
