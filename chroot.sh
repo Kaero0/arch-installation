@@ -30,7 +30,6 @@ echo "Server = http://bohoomil.com/repo/multilib/\$arch" >> /etc/pacman.conf
 pacman-key -r 962DDE58
 pacman-key --lsign-key 962DDE58
 pacman -Syu --noconfirm
-pacman -S --noconfirm infinality-bundle infinality-bundle-multilib
 
 # GRUB
 pacman -S --noconfirm os-prober intel-ucode
