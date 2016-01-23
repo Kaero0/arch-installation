@@ -82,6 +82,9 @@ intel:
 	sudo pacman -S --noconfirm xf86-video-intel libvdpau-va-gl \
 	libva-intel-driver lib32-mesa-libgl mesa-libgl
 
+virtualbox:
+	sudo pacman -S --noconfirm virtualbox-guest-utils
+
 
 
 ## Bug: Spanish keyboard does not work
