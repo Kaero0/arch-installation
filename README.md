@@ -230,7 +230,7 @@ Skype:
 
 Firefox:
 - Importar marcadores
-- Quitar caja de búsqueda de la interfaz
+- Quitar caja de búsqueda, Pocket y Hello de la interfaz
 - Preferencias >
     - General > Página de inicio: Vacío
     - Buscar > Buscador predeterminado: DuckDuckGo
