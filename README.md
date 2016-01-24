@@ -90,14 +90,15 @@ Centro de control:
         - Tema: Blue-Submarine
         - Iconos: MATE
         - Noto Sans Regular 11
-        - Activar "Imagen" y seleccionar la deseada.
-        - Imagen predeterminada del usuario: Seleccionarla
+        - Activar "Imagen" y seleccionar: /usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png
+        - Imagen predeterminada del usuario: /usr/share/icons/arch-linux-good.svg
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
 - Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
 - Administrador de Opciones CompizConfig >
     - Activar "MATE Compatibility"
     - Opciones generales > Tamaño de escritorio: 3 en horizontal y 3 en vertical
+    - Desktop Wall > Viewport Switch Preview > Switch Target Preview Visibility Time > 
     - Animations: Poner "Fade" de 100s en abrir y cerrar ventanas
 - Apariencia >
     - Tema > Activar "Blue-Submarine" > Personalizar... > Puntero: Adwaita
