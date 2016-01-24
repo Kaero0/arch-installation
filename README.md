@@ -80,7 +80,7 @@ sudo reboot
 
 Done!
 
-# Graphical configuration (MATE)
+# Graphical configuration (MATE apps)
 
 Obtenemos todos nuestros antiguos archivos.
 
@@ -88,7 +88,7 @@ Centro de control:
 - Configuración de la interfaz GTK+ de LigthDM >
     - Apariencia >
         - Tema: Blue-Submarine
-        - Iconos:
+        - Iconos: MATE
         - Noto Sans Regular 11
         - Imagen predeterminada del usuario: Seleccionarla
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
@@ -120,4 +120,112 @@ Interfaz:
     - Inmediatamente a la izquierda de "Hardware Sensors Monitor", añadir "Área de notificación" (bloquear al panel)
 - Click derecho en el panel de arriba > Eliminar este panel
 
-# Graphical configuration (GNOME)
+Pluma:
+- Ver > Activar todo
+- Editor >
+    - Ancho del tabulador: 4
+    - Activar "Insertar espacios en lugar de tabuladores"
+    - Activar "Activar sangría automática"
+- Complementos: Desactivar "Corrector ortográfico"
+
+Terminal de MATE:
+- Preferencias del perfil > General > Desactivar "Mostrar la barra de menús en las terminales nuevas por omisión"
+
+Transmission:
+- Descargas > Guardar en la ubicación: Descargas/Torrents
+
+Audacious:
+- Apariencia > Complemento de interfaz: Interfaz GTK
+
+# Graphical configuration (GNOME apps)
+
+GNOME:
+- Buscar > Desactivar todo
+- Fondo > Poner el deseado
+- Privacidad > Bloqueo de pantalla: Apagado; Uso e histórico > Desactivar "Usados recientemente"
+- Región e idioma > Todo en español
+- Energía > Apagar la pantalla: Nunca
+- Teclado > Atajos >
+    - Escritura > Tecla de composición: Ctrl derecho
+    - Combinación personalizada > Añadir terminal (comando: gnome-terminal) con Ctrl+Alt+T
+- Compartir > Nombre del equipo: fedora-pc
+- Detalles > Elegir las aplicaciones predeterminadas deseadas
+- Fecha y hora: Todo automático
+- Usuarios > Poner avatar
+
+Herramienta de retoques:
+- Apariencia > Activar "Tema oscuro global"
+- Barra superior > Activar "Mostrar la fecha"
+- Teclado y ratón > Desactivar "Pegar al pulsar con el botón central"
+- Tipografías > Monoespaciada: Source Code Pro Regular; Hinting: Slight; Alisado: Rgba
+- Áreas de trabajo > Creación de áreas de trabajo: Estática; Número de áreas de trabajo: 7
+
+Instalar desde Firefox las siguientes extensiones:
+- https://extensions.gnome.org/extension/55/media-player-indicator/
+- https://extensions.gnome.org/extension/495/topicons/
+- https://extensions.gnome.org/extension/841/freon/
+
+Nautilus > Preferencias:
+- Vistas > Activar "Colocar las carpetas antes que los archivos"
+- Comportamiento > Activar "Preguntar cada vez"
+
+GNOME Terminal:
+- Preferencias > General > Desactivar "Mostrar la barra de menús en las terminales nuevas por omisión"
+
+Meteorología:
+- Añadir: Madrid, España (o donde vivas)
+- Unidad de temperatura > Activar "Celsius"
+
+Gedit:
+- Preferencias >
+    - Ver > Activar todo menos "Mostrar mapa de vista previa" y "Resaltar parejas de corchetes"
+    - Editor > Anchura del tabulador: 4; activar "Insertar espacios en lugar de tabuladores" y "Activar sangría automática"
+    - Tipografías y colores >
+        - Source Code Pro Regular 12
+        - Oblivion
+    - Complementos: Desactivar "Corrector ortográfico" y activar "Selector de color"
+- Maximizar la ventana
+- Ver > Activar "Panel lateral"
+- Ajustar panel lateral para que el código quede en el centro
+
+Rhythmbox >
+- Complementos > Dejar activado sólo: Búsqueda de arte de portada, Interfaz de MediaServer2 D-Bus, Interfaz de MPRIS D-Bus y Visualización
+- Preferencias >
+    - General > Activar "Géneros, artistas y álbumes"
+    - Música > Activar "Vigilar mi fonoteca en busca de archivos nuevos"
+
+# Rest of the apps
+
+LibreOffice Writer >
+- Activar "Vista de página individual"
+- Herramientas > Desactivar "Revisión ortográfica automática"
+- Herramientas > Opciones... > LibreOffice Writer > Fuentes básicas (occidentales) > Poner todo en Noto Sans
+
+GIMP:
+- Ventana única y columnas al gusto
+
+Telegram:
+- Cambiar a español
+- Desactivar "Mostrar la vista previa del mensaje"
+- Desactivar "Mostrar el icono"
+- Desactivar "Reemplazar emojis"
+
+Skype:
+- Mensajería instantánea > Desactivar "Mostrar emoticonos"
+- Dispositivos de sonido > Desactivar "Permitir que Skype ajuste automáticamente mis niveles de mezclado"
+
+Firefox:
+- Importar marcadores
+- Quitar caja de búsqueda de la interfaz
+- Preferencias >
+    - General > Página de inicio: Vacío
+    - Buscar > Buscador predeterminado: DuckDuckGo
+    - Privacidad > Activar "Indicar a los sitios que no quiero ser rastreado"
+    - Avanzado > General > Desactivar "Comprobar la ortografía mientras se escribe"
+- Extensiones:
+    - https://addons.mozilla.org/es/firefox/addon/adblock-plus/ (ocultarlo de la interfaz)
+    - https://addons.mozilla.org/es/firefox/addon/flagfox/
+    - (sólo si se usa GNOME) https://addons.mozilla.org/es/firefox/addon/htitle/ (desactivar "Show window controls"; activar "Always")
+- about:config
+    - middlemouse.contentLoadURL
+    - middlemouse.paste
