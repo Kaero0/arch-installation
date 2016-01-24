@@ -82,7 +82,10 @@ Done!
 
 # Graphical configuration (MATE apps)
 
-primero recuperamos todos nuestros antiguos de la copia de seguridad.
+Primero recuperamos todos nuestros antiguos de la copia de seguridad.
+
+CompizConfig:
+- 
 
 Centro de control:
 - Configuración de la interfaz GTK+ de LigthDM >
@@ -105,6 +108,13 @@ Centro de control:
     - Desactivar "Activar el salvapantallas cuando el equipo esté activo"
     - Desactivar "Bloquear pantalla cuando el salvapantallas esté activo"
 - Acerca de mí > Establecer avatar
+- Aplicaciones preferidas >
+    - Multimedia >
+        - Visor de imágenes: Eye of MATE
+        - Reproductor multimedia: MPV
+    - Sistema >
+        - Editor de textos: Pluma
+        - Gestor de ficheros: Caja
 
 Interfaz:
 - Click derecho en el panel de abajo > Eliminar este panel
@@ -119,6 +129,7 @@ Interfaz:
     - Inmediatamente a la izquierda de "Ojos", añadir "Selector de áreas de trabajo" (bloquear al panel)
         - Que sean 6
     - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Hardware Sensors Monitor" (bloquear al panel)
+        - Establecer los sensores deseados; yo prefiero los núcleos del procesador, la tarjeta gráfica y el disco duro
     - Inmediatamente a la izquierda de "Hardware Sensors Monitor", añadir "Área de notificación" (bloquear al panel)
 - Click derecho en el panel de arriba > Eliminar este panel
 
