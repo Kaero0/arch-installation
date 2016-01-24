@@ -98,8 +98,9 @@ Centro de control:
 - Administrador de Opciones CompizConfig >
     - Activar "MATE Compatibility"
     - Opciones generales > Tamaño de escritorio: 3 en horizontal y 3 en vertical
+    - Animations: Poner "Fade" de 100s en abrir y cerrar ventanas
 - Apariencia >
-    - Tema > Activar "Blue-Submarine"
+    - Tema > Activar "Blue-Submarine" > Personalizar... > Puntero: Adwaita
     - Fondo > Establecer uno
     - Tipografías >
         - Cambiar todas a Noto Sans, salvo la última a Source Code Pro Regular
@@ -237,7 +238,7 @@ Firefox:
 - Extensiones:
     - https://addons.mozilla.org/es/firefox/addon/adblock-plus/ (ocultarlo de la interfaz)
     - https://addons.mozilla.org/es/firefox/addon/flagfox/
-    - (sólo si se usa GNOME) https://addons.mozilla.org/es/firefox/addon/htitle/ (desactivar "Show window controls"; activar "Always")
+    - (sólo si se usa GNOME) https://addons.mozilla.org/es/firefox/addon/htitle/
 - about:config
     - middlemouse.contentLoadURL
     - middlemouse.paste
