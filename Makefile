@@ -171,6 +171,8 @@ apps:
 	flashplugin skype easytag libreoffice-fresh libreoffice-fresh-es mypaint \
 	gimp gimp-help-es pinta calligra-krita inkscape gparted audacity blender \
 	mpv subtitleeditor synfigstudio
+	# Sensors
+	sudo sensors-detect
 	# Telegram
 	wget -O telegram.tar.xz https://tdesktop.com/linux
 	tar Jxvf telegram.tar.xz
