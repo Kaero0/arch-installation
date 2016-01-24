@@ -82,7 +82,7 @@ Done!
 
 # Graphical configuration (MATE apps)
 
-Obtenemos todos nuestros antiguos archivos.
+primero recuperamos todos nuestros antiguos de la copia de seguridad.
 
 Centro de control:
 - Configuración de la interfaz GTK+ de LigthDM >
@@ -90,12 +90,14 @@ Centro de control:
         - Tema: Blue-Submarine
         - Iconos: MATE
         - Noto Sans Regular 11
+        - Activar "Imagen" y seleccionar la deseada.
         - Imagen predeterminada del usuario: Seleccionarla
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
 - Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
 - Apariencia >
     - Tema > Activar "Blue-Submarine"
+    - Fondo > Establecer uno
     - Tipografías >
         - Cambiar todas a Noto Sans, salvo la última a Source Code Pro Regular
         - Cambiar todos los tamaños de 10 a 11
