@@ -148,6 +148,8 @@ mate:
 	# Single-icon windows in panel
 	mkdir -p /home/$(USER_NAME)/.mate-applet-dock-folder
 	cd /home/$(USER_NAME)/.mate-applet-dock-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz; tar zxf mate-applet-dock-git.tar.gz; cd mate-applet-dock-git; makepkg -cs; sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz; cd /home/$(USER_NAME)
+	# Hide desktop icons
+	dconf write /org/mate/desktop/background/show-desktop-icons false
 	# More apps for Mate
 	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
 	# Reboot
