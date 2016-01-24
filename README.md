@@ -82,11 +82,23 @@ Done!
 
 # Graphical configuration (MATE)
 
+Obtenemos todos nuestros antiguos archivos.
+
 Centro de control:
 - Configuración de la interfaz GTK+ de LigthDM >
+    - Apariencia >
+        - Tema: Blue-Submarine
+        - Iconos:
+        - Noto Sans Regular 11
+        - Imagen predeterminada del usuario: Seleccionarla
+    - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
 - Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
 - Apariencia >
+    - Tema > Activar "Blue-Submarine"
+    - Tipografías >
+        - Cambiar todas a Noto Sans, salvo la última a Source Code Pro Regular
+        - Cambiar todos los tamaños de 10 a 11
 - Salvapantallas >
     - Desactivar "Activar el salvapantallas cuando el equipo esté activo"
     - Desactivar "Bloquear pantalla cuando el salvapantallas esté activo"
@@ -95,11 +107,17 @@ Centro de control:
 Interfaz:
 - Click derecho en el panel de abajo > Eliminar este panel
 - Click derecho en el panel de arriba > Panel nuevo
-- Click derecho en el panel de abajo > Propiedades > Tamaño: 40px
+- Click derecho en el panel de abajo > Propiedades > Tamaño: 38px
 - Click derecho a la izquierda del todo del panel de abajo > Añadir al panel... > Barra de menú (bloquear al panel)
     - Inmediatamente a la derecha de "Barra de menú", añadir "Dock" (bloquear al panel)
+        - Activar "display an indicator for each open window"
+        - Establecer permanentemente: Firefox, Telegram, Skype, Pluma, Caja
 - Click derecho a la derecha del todo del panel de abajo > Añadir al panel... > Reloj (bloquear al panel)
-    - Inmediatamente a la izquierda de "Reloj", añadir "Selector de áreas de trabajo" (bloquear al panel)
-    - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Área de notificación" (bloquear al panel)
+    - Inmediatamente a la izquierda de "Reloj", añadir "Ojos" (bloquear al panel)
+    - Inmediatamente a la izquierda de "Ojos", añadir "Selector de áreas de trabajo" (bloquear al panel)
+        - Que sean 6
+    - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Hardware Sensors Monitor" (bloquear al panel)
+    - Inmediatamente a la izquierda de "Hardware Sensors Monitor", añadir "Área de notificación" (bloquear al panel)
+- Click derecho en el panel de arriba > Eliminar este panel
 
 # Graphical configuration (GNOME)
