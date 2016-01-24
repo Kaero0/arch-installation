@@ -82,4 +82,24 @@ Done!
 
 # Graphical configuration (MATE)
 
+Centro de control:
+- Configuración de la interfaz GTK+ de LigthDM >
+- Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
+- Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
+- Apariencia >
+- Salvapantallas >
+    - Desactivar "Activar el salvapantallas cuando el equipo esté activo"
+    - Desactivar "Bloquear pantalla cuando el salvapantallas esté activo"
+- Acerca de mí > Establecer avatar
+
+Interfaz:
+- Click derecho en el panel de abajo > Eliminar este panel
+- Click derecho en el panel de arriba > Panel nuevo
+- Click derecho en el panel de abajo > Propiedades > Tamaño: 40px
+- Click derecho a la izquierda del todo del panel de abajo > Añadir al panel... > Barra de menú (bloquear al panel)
+    - Inmediatamente a la derecha de "Barra de menú", añadir "Dock" (bloquear al panel)
+- Click derecho a la derecha del todo del panel de abajo > Añadir al panel... > Reloj (bloquear al panel)
+    - Inmediatamente a la izquierda de "Reloj", añadir "Selector de áreas de trabajo" (bloquear al panel)
+    - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Área de notificación" (bloquear al panel)
+
 # Graphical configuration (GNOME)
