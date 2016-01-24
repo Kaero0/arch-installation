@@ -84,9 +84,6 @@ Done!
 
 Primero recuperamos todos nuestros antiguos de la copia de seguridad.
 
-CompizConfig:
-- 
-
 Centro de control:
 - Configuración de la interfaz GTK+ de LigthDM >
     - Apariencia >
@@ -98,6 +95,9 @@ Centro de control:
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
 - Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
+- Administrador de Opciones CompizConfig >
+    - Activar "MATE Compatibility"
+    - Opciones generales > Tamaño de escritorio: 3 en horizontal y 3 en vertical
 - Apariencia >
     - Tema > Activar "Blue-Submarine"
     - Fondo > Establecer uno
