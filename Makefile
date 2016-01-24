@@ -150,6 +150,11 @@ mate:
 	cd /home/$(USER_NAME)/.mate-applet-dock-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz; tar zxf mate-applet-dock-git.tar.gz; cd mate-applet-dock-git; makepkg -cs; sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz; cd /home/$(USER_NAME)
 	# Hide desktop icons
 	dconf write /org/mate/desktop/background/show-desktop-icons false
+	# Use an elegant icon
+	mkdir -p /home/$(USER_NAME)/.local/share/icons/
+	wget -O arch-linux-good.svg http://cinderwick.ca/files/archlinux/artwork-official/symbol.svg
+	mv arch-linux-good.svg /home/$(USER_NAME)/.local/share/icons/
+	dconf write /org/mate/panel/menubar/icon-name arch-linux-good
 	# More apps for Mate
 	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
 	# Reboot
@@ -217,6 +222,7 @@ wine-games:
 	mkdir -p /home/$(USER_NAME)/.osu-folder
 	wget http://m1.ppy.sh/release/osume.exe
 	mv osume.exe /home/$(USER_NAME)/.osu-folder/osume.exe
+	mkdir -p /home/$(USER_NAME)/.local/share/icons/
 	wget -O osu-icon.png http://w.ppy.sh/c/c9/Logo.png
 	mv osu-icon.png /home/$(USER_NAME)/.local/share/icons/
 	echo '#!/usr/bin/env xdg-open' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
