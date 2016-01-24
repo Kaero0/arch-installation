@@ -300,6 +300,7 @@ mate:
 	dconf write /org/mate/marco/general/compositing-manager true
 	mkdir -p /home/$(USER_NAME)/.compiz-folder
 	cd /home/$(USER_NAME)/.compiz-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/compiz.tar.gz; tar zxf compiz.tar.gz; cd compiz; makepkg -cs; sudo pacman -U --noconfirm compi*.pkg.tar.xz; cd /home/$(USER_NAME)
+	dconf write /org/mate/desktop/session/required-components/windowmanager compiz
 	# Single-icon windows in panel
 	mkdir -p /home/$(USER_NAME)/.mate-applet-dock-folder
 	cd /home/$(USER_NAME)/.mate-applet-dock-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz; tar zxf mate-applet-dock-git.tar.gz; cd mate-applet-dock-git; makepkg -cs; sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz; cd /home/$(USER_NAME)
