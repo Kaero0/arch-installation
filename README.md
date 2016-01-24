@@ -127,7 +127,6 @@ Interfaz:
 - Click derecho a la derecha del todo del panel de abajo > Añadir al panel... > Reloj (bloquear al panel)
     - Inmediatamente a la izquierda de "Reloj", añadir "Ojos" (bloquear al panel)
     - Inmediatamente a la izquierda de "Ojos", añadir "Selector de áreas de trabajo" (bloquear al panel)
-        - Que sean 6
     - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Hardware Sensors Monitor" (bloquear al panel)
         - Establecer los sensores deseados; yo prefiero los núcleos del procesador, la tarjeta gráfica y el disco duro
     - Inmediatamente a la izquierda de "Hardware Sensors Monitor", añadir "Área de notificación" (bloquear al panel)
