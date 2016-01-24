@@ -154,7 +154,7 @@ mate:
 	mkdir -p /home/$(USER_NAME)/.local/share/icons/
 	wget -O arch-linux-good.svg http://cinderwick.ca/files/archlinux/artwork-official/symbol.svg
 	mv arch-linux-good.svg /home/$(USER_NAME)/.local/share/icons/
-	dconf write /org/mate/panel/menubar/icon-name arch-linux-good
+	dconf write /org/mate/panel/menubar/icon-name "'arch-linux-good'"
 	# More apps for Mate
 	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
 	# Reboot
