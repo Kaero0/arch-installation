@@ -296,6 +296,9 @@ mate:
 	mate-applet-lockkeys mate-applet-streamer mate-color-manager \
 	mate-disk-utility lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 	sudo systemctl enable lightdm.service
+	# Enable compositing
+	dconf write /org/mate/marco/general/compositing-manager true
+	cd /home/$(USER_NAME)/.compton-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/compton.tar.gz; tar zxf compton.tar.gz; cd compton; makepkg -cs; sudo pacman -U --noconfirm compt*.pkg.tar.xz; cd /home/$(USER_NAME)
 	# Single-icon windows in panel
 	mkdir -p /home/$(USER_NAME)/.mate-applet-dock-folder
 	cd /home/$(USER_NAME)/.mate-applet-dock-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/mate-applet-dock-git.tar.gz; tar zxf mate-applet-dock-git.tar.gz; cd mate-applet-dock-git; makepkg -cs; sudo pacman -U --noconfirm mate-applet-dock-*.pkg.tar.xz; cd /home/$(USER_NAME)
