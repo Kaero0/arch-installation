@@ -93,7 +93,9 @@ Centro de control:
         - Activar "Imagen" y seleccionar: /usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png
         - Imagen predeterminada del usuario: /usr/share/icons/arch-linux-good.svg
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
-- Combinaciones de teclas > Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
+- Combinaciones de teclas >
+    - Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
+    - Añadir "Abrir Pluma" con el comando "pluma" y "Ctrl+Alt+P"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
 - Administrador de Opciones CompizConfig >
     - Activar "MATE Compatibility"
