@@ -379,18 +379,4 @@ wine-games:
 	mkdir -p /home/$(USER_NAME)/.osu-folder
 	wget http://m1.ppy.sh/release/osume.exe
 	mv osume.exe /home/$(USER_NAME)/.osu-folder/osume.exe
-	mkdir -p /home/$(USER_NAME)/.local/share/icons/
-	wget -O osu-icon.png http://w.ppy.sh/c/c9/Logo.png
-	mv osu-icon.png /home/$(USER_NAME)/.local/share/icons/
-	echo '#!/usr/bin/env xdg-open' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo '[Desktop Entry]' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Encoding=UTF-8' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Name=OSU' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Name[hr]=OSU' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Exec=sh -c "WINEDEBUG=-all wine /home/$(USER_NAME)/.osu-folder/osume.exe -opengl"' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	#echo 'Exec=sh -c "WINEDEBUG=-all __GL_THREADED_OPTIMIZATIONS=1 wine /home/$(USER_NAME)/.osu-folder/osume.exe -opengl"' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Icon=osu-icon.png' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Terminal=false' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Type=Application' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'Categories=Application;Game;' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
-	echo 'StartupNotify=false' >> /home/$(USER_NAME)/.local/share/applications/osu.desktop
+	wine /home/$(USER_NAME)/.osu-folder/osume.exe
