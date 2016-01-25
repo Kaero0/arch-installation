@@ -132,6 +132,9 @@ Interfaz:
     - Inmediatamente a la izquierda de "Selector de áreas de trabajo", añadir "Hardware Sensors Monitor" (bloquear al panel)
         - Establecer los sensores deseados; yo prefiero los núcleos del procesador, la tarjeta gráfica y el disco duro
     - Inmediatamente a la izquierda de "Hardware Sensors Monitor", añadir "Área de notificación" (bloquear al panel)
+        - Preferencias de sonido >
+            - Efectos de sonido > Tema de sonido: Default
+            - Configurar entrada y salida
 - Click derecho en el panel de arriba > Eliminar este panel
 
 Pluma:
