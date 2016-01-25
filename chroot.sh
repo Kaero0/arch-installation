@@ -31,6 +31,9 @@ pacman-key -r 962DDE58
 pacman-key --lsign-key 962DDE58
 pacman -Syu --noconfirm
 
+# No beep sound
+echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+
 # GRUB
 pacman -S --noconfirm os-prober intel-ucode
 grub-install --recheck /dev/sda
