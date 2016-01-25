@@ -275,17 +275,6 @@ gnome:
 	gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Games/ categories "['Game']"
 	# Disable screen blocker
 	gsettings set org.gnome.desktop.session idle-delay 0
-	# Gedit ATS2 support
-	# https://github.com/Hibou57/ats2-gtksourceview-language-support
-	mkdir -p /home/$(USER_NAME)/.local/share/gtksourceview-3.0/language-specs/
-	wget https://raw.githubusercontent.com/Hibou57/ats2-gtksourceview-language-support/master/ats.lang
-	mv ats.lang /home/$(USER_NAME)/.local/share/gtksourceview-3.0/language-specs/
-	mkdir -p /home/$(USER_NAME)/.local/share/mime/packages/
-	wget https://raw.githubusercontent.com/Hibou57/ats2-gtksourceview-language-support/master/ats.xml
-	mv ats.xml /home/$(USER_NAME)/.local/share/mime/packages/
-	mkdir -p /home/$(USER_NAME)/.icons/
-	wget https://raw.githubusercontent.com/Hibou57/ats2-gtksourceview-language-support/master/ats.svg
-	mv ats.svg /home/$(USER_NAME)/.icons/
 	# Reboot
 	sudo reboot
 
