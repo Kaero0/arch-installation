@@ -96,6 +96,12 @@ Centro de control:
 - Combinaciones de teclas >
     - Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
     - Añadir "Abrir Pluma" con el comando "pluma" y "Ctrl+Alt+P"
+    - Añadir "Abrir Clementine" con el comando "clementine" y "Ctrl+Alt+C"
+    - Añadir "Abrir Firefox" con el comando "firefox" y "Ctrl+Alt+F"
+    - Añadir "Abrir Skype" con el comando "skype" y "Ctrl+Alt+S"
+    - Añadir "Abrir Caja" con el comando "caja --no-desktop --browser /home/lajto" (cambiar "lajto") y "Ctrl+Alt+K"
+    - Añadir "Abrir Telegram" con el comando "/home/lajto/.telegram-folder/Telegram" (cambiar "lajto") y "Ctrl+Alt+O"
+    - Añadir "Abrir monitor del sistema" con el comando "mate-system-monitor" y "Ctrl+Alt+M"
 - Gestor de energía > Poner la pantalla en reposo si está inactivo durante: Nunca
 - Administrador de Opciones CompizConfig >
     - Activar "MATE Compatibility"
