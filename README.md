@@ -154,6 +154,9 @@ Pluma:
     - Activar "Activar sangría automática"
 - Complementos: Desactivar "Corrector ortográfico"
 
+Caja:
+- Preferencias > Vistas > Nivel de ampliación para la vista de iconos: 150% (hacerlo también desde la interfaz)
+
 Terminal de MATE:
 - Preferencias del perfil > General > Desactivar "Mostrar la barra de menús en las terminales nuevas por omisión"
 
