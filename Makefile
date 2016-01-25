@@ -313,7 +313,7 @@ mate:
 	sudo cp /home/$(USER_NAME)/.local/share/icons/arch-linux-good.svg /usr/share/icons/
 	dconf write /org/mate/panel/menubar/icon-name "'arch-linux-good'"
 	# More apps for Mate
-	sudo pacman -S --noconfirm audacious transmission-gtk xfburn
+	sudo pacman -S --noconfirm clementine transmission-gtk xfburn
 	# Reboot
 	sudo reboot
 
