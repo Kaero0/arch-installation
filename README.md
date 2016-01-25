@@ -89,9 +89,9 @@ Centro de control:
     - Apariencia >
         - Tema: Blue-Submarine
         - Iconos: MATE
-        - Noto Sans Regular 11
+        - Tipo de letra: Noto Sans Regular 11
         - Activar "Imagen" y seleccionar: /usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png
-        - Imagen predeterminada del usuario: /usr/share/icons/arch-linux-good.svg
+        - Imagen predeterminada del usuario: /usr/share/icons/arch-icon-mini.png
     - Otros > Tiempo de espera hasta que se apague la pantalla: Nunca
 - Combinaciones de teclas >
     - Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
