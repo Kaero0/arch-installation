@@ -152,8 +152,15 @@ Terminal de MATE:
 Transmission:
 - Descargas > Guardar en la ubicación: Descargas/Torrents
 
-Audacious:
-- Apariencia > Complemento de interfaz: Interfaz GTK
+Clementine:
+- Preferencias >
+    - Comportamiento >
+        - Desactivar "Mostrar icono en el área de notificación"
+        - Desactivar "Seguir ejecutando el programa en el fondo al cerrar la ventana"
+    - Colección musical > Añadir la carpeta de música
+    - Apariencia > Activar "Carátula del álbum"
+    - Notificaciones > Activar "Desactivado"
+- Click derecho en la lista lateral izquierda > Opciones de visualización > Agrupar por > Género/Álbum
 
 # Graphical configuration (GNOME apps)
 
