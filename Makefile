@@ -312,6 +312,9 @@ mate:
 	mv arch-linux-good.svg /home/$(USER_NAME)/.local/share/icons/
 	sudo cp /home/$(USER_NAME)/.local/share/icons/arch-linux-good.svg /usr/share/icons/
 	dconf write /org/mate/panel/menubar/icon-name "'arch-linux-good'"
+	# Arch icon to LightDM avatar
+	wget -O arch-icon-mini.png http://vignette2.wikia.nocookie.net/en.linux/images/7/75/Arch-icon.png/revision/latest?cb=20100620154301
+	sudo mv arch-icon-mini.png /usr/share/icons/
 	# More apps for Mate
 	sudo pacman -S --noconfirm clementine transmission-gtk xfburn
 	# Reboot
