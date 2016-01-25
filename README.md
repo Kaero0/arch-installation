@@ -100,6 +100,7 @@ Centro de control:
     - Opciones generales > Tamaño de escritorio: 3 en horizontal y 3 en vertical
     - Desktop Wall > Viewport Switch Preview > Switch Target Preview Visibility Time > 
     - Animations: Poner "Fade" de 100s en abrir y cerrar ventanas
+    - Colocar ventanas > General > Modo de Posicionamiento: Centrado
 - Apariencia >
     - Tema > Activar "Blue-Submarine" > Personalizar... > Puntero: Adwaita
     - Fondo > Establecer uno
