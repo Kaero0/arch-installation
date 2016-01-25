@@ -243,3 +243,8 @@ Firefox:
 - about:config
     - middlemouse.contentLoadURL
     - middlemouse.paste
+- Conectar todas las cuentas
+
+Steam:
+- Settings > Interface > Español (Spanish)
+- Instalar todos los juegos
