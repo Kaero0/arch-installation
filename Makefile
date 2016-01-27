@@ -327,8 +327,8 @@ apps:
 	mpv subtitleeditor synfigstudio
 	## Atom
 	sudo pacman -S --noconfirm atom shellcheck
-	apm install language-ini linter linter-htmlhint linter-csslint \
-	linter-coffeescript linter-shellcheck minimap \
+	apm install language-markdown language-ini linter linter-htmlhint \
+	linter-csslint linter-coffeescript linter-shellcheck minimap \
 	autoclose-html highlight-selected project-manager greti-syntax
 	rm -f /home/$(USER_NAME)/.atom/config.cson
 	wget -O config.cson https://raw.githubusercontent.com/Lajto/arch-installation/master/config.cson
