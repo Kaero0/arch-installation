@@ -1,0 +1,24 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "seti-ui"
+      "atom-material-syntax"
+    ]
+    disabledPackages: [
+      "spell-check"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Code Pro"
+    fontSize: 16
+    scrollPastEnd: true
+    tabLength: 4
+    softWrap: true
+  "linter-shellcheck":
+    "shellcheckExecutablePath": "/usr/bin/shellcheck"
+  "autocomplete-plus":
+    enableAutoActivation: false
+  "spell-check": {}
