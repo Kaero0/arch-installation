@@ -134,7 +134,7 @@ Interfaz:
 - Click derecho a la izquierda del todo del panel de abajo > Añadir al panel... > Barra de menú (bloquear al panel)
     - Inmediatamente a la derecha de "Barra de menú", añadir "Dock" (bloquear al panel)
         - Activar "display an indicator for each open window"
-        - Establecer permanentemente: Firefox, Telegram, Skype, Pluma, Caja
+        - Establecer permanentemente: Firefox, Telegram, Skype, Atom, Pluma, Caja
 - Click derecho a la derecha del todo del panel de abajo > Añadir al panel... > Reloj (bloquear al panel)
     - Inmediatamente a la izquierda de "Reloj", añadir "Ojos" (bloquear al panel)
     - Inmediatamente a la izquierda de "Ojos", añadir "Selector de áreas de trabajo" (bloquear al panel)
