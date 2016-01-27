@@ -325,6 +325,17 @@ apps:
 	flashplugin skype easytag libreoffice-fresh libreoffice-fresh-es mypaint \
 	gimp gimp-help-es pinta calligra-krita inkscape gparted audacity blender \
 	mpv subtitleeditor synfigstudio
+	## Atom
+	sudo pacman -S --noconfirm atom shellcheck
+	apm install language-ini linter linter-htmlhint linter-csslint \
+	linter-coffeescript linter-shellcheck linter-xmllint minimap color-picker \
+	atom-html-preview autoclose-html save-session highlight-selected \
+	project-manager seti-ui atom-material-syntax
+	rm -f /home/$(USER_NAME)/.atom/config.cson
+	wget -O config.cson https://raw.githubusercontent.com/Lajto/arch-installation/master/config.cson
+	mv config.cson /home/$(USER_NAME)/.atom/config.cson
+	## Atom (PL/pgSQL)
+	cd /home/$(USER_NAME); mkdir -p .atom-by-lajto; cd .atom-by-lajto; rm -Rf atom-language-plpgsql; git clone https://github.com/Lajto/atom-language-plpgsql; cd atom-language-plpgsql; apm install; apm link .; cd /home/$(USER_NAME)
 	# Sensors
 	sudo sensors-detect
 	# Telegram
