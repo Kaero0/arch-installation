@@ -328,14 +328,21 @@ apps:
 	## Atom
 	sudo pacman -S --noconfirm atom shellcheck
 	apm install language-ini linter linter-htmlhint linter-csslint \
-	linter-coffeescript linter-shellcheck linter-xmllint minimap color-picker \
-	atom-html-preview autoclose-html highlight-selected project-manager \
-	greti-syntax
+	linter-coffeescript linter-shellcheck minimap \
+	autoclose-html highlight-selected project-manager greti-syntax
 	rm -f /home/$(USER_NAME)/.atom/config.cson
 	wget -O config.cson https://raw.githubusercontent.com/Lajto/arch-installation/master/config.cson
 	mv config.cson /home/$(USER_NAME)/.atom/config.cson
 	## Atom (PL/pgSQL)
 	cd /home/$(USER_NAME); mkdir -p .atom-by-lajto; cd .atom-by-lajto; rm -Rf atom-language-plpgsql; git clone https://github.com/Lajto/atom-language-plpgsql; cd atom-language-plpgsql; apm install; apm link .; cd /home/$(USER_NAME)
+	## Atom (Rust)
+	sudo pacman -S --noconfirm rust cargo
+	apm install language-rust linter-rust
+	## Atom (Haskell)
+	sudo pacman -S --noconfirm ghc cabal-install haddock happy alex
+	cabal update
+	cabal install stylish-haskell
+	apm install language-haskell
 	# Sensors
 	sudo sensors-detect
 	# Telegram
