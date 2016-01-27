@@ -329,8 +329,8 @@ apps:
 	sudo pacman -S --noconfirm atom shellcheck
 	apm install language-ini linter linter-htmlhint linter-csslint \
 	linter-coffeescript linter-shellcheck linter-xmllint minimap color-picker \
-	atom-html-preview autoclose-html save-session highlight-selected \
-	project-manager seti-ui atom-material-syntax
+	atom-html-preview autoclose-html highlight-selected project-manager \
+	greti-syntax
 	rm -f /home/$(USER_NAME)/.atom/config.cson
 	wget -O config.cson https://raw.githubusercontent.com/Lajto/arch-installation/master/config.cson
 	mv config.cson /home/$(USER_NAME)/.atom/config.cson
