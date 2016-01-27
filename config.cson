@@ -4,13 +4,16 @@
   core:
     autoHideMenuBar: true
     themes: [
-      "seti-ui"
-      "atom-material-syntax"
+      "one-dark-ui"
+      "greti-syntax"
     ]
+    openEmptyEditorOnStart: false
     disabledPackages: [
       "spell-check"
     ]
   editor:
+    autoIndentOnPaste: false
+    showIndentGuide: true
     invisibles: {}
     fontFamily: "Source Code Pro"
     fontSize: 16
