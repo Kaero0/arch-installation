@@ -25,3 +25,6 @@
   "autocomplete-plus":
     enableAutoActivation: false
   "spell-check": {}
+".rust.source":
+  editor:
+    preferredLineLength: 80
