@@ -96,6 +96,7 @@ Centro de control:
 - Combinaciones de teclas >
     - Añadir "Abrir terminal" con el comando "mate-terminal" y "Ctrl+Alt+T"
     - Añadir "Abrir Pluma" con el comando "pluma" y "Ctrl+Alt+P"
+    - Añadir "Abrir Atom" con el comando "atom" y "Ctrl+Alt+A"
     - Añadir "Abrir Clementine" con el comando "clementine" y "Ctrl+Alt+C"
     - Añadir "Abrir Firefox" con el comando "firefox" y "Ctrl+Alt+F"
     - Añadir "Abrir Skype" con el comando "skype" y "Ctrl+Alt+S"
@@ -134,7 +135,7 @@ Interfaz:
 - Click derecho a la izquierda del todo del panel de abajo > Añadir al panel... > Barra de menú (bloquear al panel)
     - Inmediatamente a la derecha de "Barra de menú", añadir "Dock" (bloquear al panel)
         - Activar "display an indicator for each open window"
-        - Establecer permanentemente: Firefox, Telegram, Skype, Atom, Pluma, Caja
+        - Establecer permanentemente: Firefox, Telegram, Skype, Clementine, Atom, Pluma, Caja
 - Click derecho a la derecha del todo del panel de abajo > Añadir al panel... > Reloj (bloquear al panel)
     - Inmediatamente a la izquierda de "Reloj", añadir "Ojos" (bloquear al panel)
     - Inmediatamente a la izquierda de "Ojos", añadir "Selector de áreas de trabajo" (bloquear al panel)
@@ -249,6 +250,9 @@ Telegram:
 Skype:
 - Mensajería instantánea > Desactivar "Mostrar emoticonos"
 - Dispositivos de sonido > Desactivar "Permitir que Skype ajuste automáticamente mis niveles de mezclado"
+
+Atom:
+- Maximizar ventana y ajustar ancho del panel lateral izquierdo, de forma que el código se centre
 
 Firefox:
 - Importar marcadores
