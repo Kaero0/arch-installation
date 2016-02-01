@@ -17,6 +17,7 @@ loadkeys es
 
 wget -O archiso.sh http://bit.ly/1nq2Yy8 #https://raw.githubusercontent.com/Lajto/arch-installation/master/archiso.sh
 
+## Replace "sda" to your case using: nano archiso.sh
 sh archiso.sh
 
 arch-chroot /mnt /bin/bash
