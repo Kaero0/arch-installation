@@ -14,7 +14,7 @@ user-things:
 	# Update
 	sudo pacman -Syu --noconfirm
 	# Useful things
-	sudo pacman -S --noconfirm wget nano make libxml2 lib32-libxml2 git \
+	sudo pacman -S --noconfirm wget nano make libxml2 git \
 	mercurial lm_sensors ntfs-3g android-tools android-udev
 	# Compression tools
 	sudo pacman -S --noconfirm unrar p7zip zip unzip
@@ -27,11 +27,11 @@ user-things:
 
 nvidia:
 	sudo pacman -S --noconfirm nvidia nvidia-libgl nvidia-utils opencl-nvidia \
-	lib32-nvidia-libgl lib32-nvidia-utils lib32-opencl-nvidia libvdpau \
-	libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau\
+	libvdpau \
+	libva-vdpau-driver\
 	xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -45,7 +45,7 @@ nvidia:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -58,12 +58,12 @@ nvidia:
 
 nvidia-340:
 	sudo pacman -S --noconfirm nvidia-340xx nvidia-340xx-libgl \
-	nvidia-340xx-utils opencl-nvidia-340xx lib32-nvidia-340xx-libgl \
-	lib32-nvidia-340xx-utils lib32-opencl-nvidia-340xx libvdpau \
-	libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau\
+	nvidia-340xx-utils opencl-nvidia-340xx \
+	libvdpau \
+	libva-vdpau-driver \
 	xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -77,7 +77,7 @@ nvidia-340:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -90,11 +90,11 @@ nvidia-340:
 
 nvidia-optimus:
 	sudo pacman -S --noconfirm bumblebee mesa xf86-video-intel nvidia \
-	virtualgl lib32-virtualgl lib32-nvidia-utils lib32-mesa-libgl libvdpau \
-	libva-vdpau-driver lib32-libva-vdpau-driver lib32-libvdpau \
+	virtualgl libvdpau \
+	libva-vdpau-driver \
 	xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -108,7 +108,7 @@ nvidia-optimus:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -122,10 +122,10 @@ nvidia-optimus:
 	sudo systemctl enable bumblebeed.service
 
 nouveau:
-	sudo pacman -S --noconfirm xf86-video-nouveau mesa-vdpau lib32-mesa-libgl \
+	sudo pacman -S --noconfirm xf86-video-nouveau mesa-vdpau \
 	mesa-libgl xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -139,7 +139,7 @@ nouveau:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -151,10 +151,10 @@ nouveau:
 	cd /home/$(USER_NAME)/.gst-plugin-libde265-folder; wget https://aur.archlinux.org/cgit/aur.git/snapshot/gst-plugin-libde265.tar.gz; tar zxf gst-plugin-libde265.tar.gz; cd gst-plugin-libde265; makepkg -cs; sudo pacman -U --noconfirm gst-plugin-libde*.pkg.tar.xz; cd /home/$(USER_NAME)
 
 ati-radeon:
-	sudo pacman -S --noconfirm xf86-video-ati mesa-vdpau lib32-mesa-libgl \
+	sudo pacman -S --noconfirm xf86-video-ati mesa-vdpau \
 	mesa-libgl xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -168,7 +168,7 @@ ati-radeon:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -181,9 +181,9 @@ ati-radeon:
 
 intel:
 	sudo pacman -S --noconfirm xf86-video-intel libvdpau-va-gl \
-	libva-intel-driver lib32-mesa-libgl mesa-libgl xorg-server xorg-xinit xorg-utils \
+	libva-intel-driver mesa-libgl xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -197,7 +197,7 @@ intel:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -211,7 +211,7 @@ intel:
 virtualbox:
 	sudo pacman -S --noconfirm virtualbox-guest-utils xorg-server xorg-xinit xorg-utils \
 	xorg-server-utils mesa mesa-demos
-	wget https://raw.githubusercontent.com/Lajto/arch-installation/master/10-keyboard.conf
+	wget https://raw.githubusercontent.com/Kaero0/arch-installation/master/10-keyboard.conf
 	sudo rm -f /etc/X11/xorg.conf.d/10-keyboard.conf
 	sudo mv 10-keyboard.conf /etc/X11/xorg.conf.d/10-keyboard.conf
 	# Fonts and tricks to get HQ fonts
@@ -225,7 +225,7 @@ virtualbox:
 	sudo ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 	# Audio
 	sudo pacman -S --noconfirm alsa-firmware pulseaudio pulseaudio-alsa \
-	libcanberra-pulse lib32-libcanberra-pulse lib32-alsa-plugins alsa-plugins
+	libcanberra-pulse alsa-plugins
 	# GStreamer and more codecs
 	sudo pacman -S --noconfirm gstreamer0.10 gstreamer0.10-plugins gstreamer \
 	gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good \
@@ -321,7 +321,7 @@ kde:
 
 
 apps:
-	sudo pacman -S --noconfirm firefox firefox-i18n-es-es lib32-flashplugin \
+	sudo pacman -S --noconfirm firefox firefox-i18n-es-es \
 	flashplugin skype easytag libreoffice-fresh libreoffice-fresh-es mypaint \
 	gimp gimp-help-es pinta calligra-krita inkscape gparted audacity blender \
 	mpv subtitleeditor synfigstudio
@@ -356,11 +356,10 @@ games:
 	# Libre games
 	sudo pacman -S --noconfirm 0ad wesnoth minetest supertuxkart openttd
 	# Steam
-	sudo pacman -S --noconfirm steam lib32-glu lib32-libxmu lib32-sdl_ttf \
-	lib32-openal lib32-libpulse lib32-sdl lib32-sdl2 \
-	lib32-libxft lib32-libvorbis lib32-sdl_image lib32-libxtst libxtst \
-	lib32-sqlite glu lib32-libidn lib32-libxxf86vm xorg-xwininfo lib32-pango \
-	fluidsynth lib32-gnutls dosbox sdl2_image
+	sudo pacman -S --noconfirm steam l32-sdl_ttf \
+	libxtst \
+	xorg-xwininfo \
+	fluidsynth dosbox sdl2_image
 	# Emulators
 	sudo pacman -S --noconfirm pcsxr pcsx2 vbam-gtk desmume dolphin-emu ppsspp
 
