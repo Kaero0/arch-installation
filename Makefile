@@ -321,28 +321,9 @@ kde:
 
 
 apps:
-	sudo pacman -S --noconfirm firefox firefox-i18n-es-es \
-	flashplugin skype easytag libreoffice-fresh libreoffice-fresh-es mypaint \
-	gimp gimp-help-es pinta calligra-krita inkscape gparted audacity blender \
-	mpv subtitleeditor synfigstudio
-	## Atom
-	sudo pacman -S --noconfirm atom shellcheck
-	apm install language-markdown language-ini linter linter-htmlhint \
-	linter-csslint linter-coffeescript linter-shellcheck minimap \
-	autoclose-html highlight-selected project-manager greti-syntax
-	rm -f /home/$(USER_NAME)/.atom/config.cson
-	wget -O config.cson https://raw.githubusercontent.com/Lajto/arch-installation/master/config.cson
-	mv config.cson /home/$(USER_NAME)/.atom/config.cson
-	## Atom (PL/pgSQL)
-	cd /home/$(USER_NAME); mkdir -p .atom-by-lajto; cd .atom-by-lajto; rm -Rf atom-language-plpgsql; git clone https://github.com/Lajto/atom-language-plpgsql; cd atom-language-plpgsql; apm install; apm link .; cd /home/$(USER_NAME)
-	## Atom (Rust)
-	sudo pacman -S --noconfirm rust cargo
-	apm install language-rust linter-rust
-	## Atom (Haskell)
-	sudo pacman -S --noconfirm ghc cabal-install haddock happy alex
-	cabal update
-	cabal install stylish-haskell
-	apm install language-haskell
+	sudo pacman -S --noconfirm midori \
+	flashplugin skype libreoffice-fresh libreoffice-fresh-es \
+	pinta gparted mpv
 	# Sensors
 	sudo sensors-detect
 	# Telegram
@@ -351,41 +332,3 @@ apps:
 	rm telegram.tar.xz
 	mv Telegram ~/.telegram-folder
 	~/.telegram-folder/Telegram
-
-games:
-	# Libre games
-	sudo pacman -S --noconfirm 0ad wesnoth minetest supertuxkart openttd
-	# Steam
-	sudo pacman -S --noconfirm steam l32-sdl_ttf \
-	libxtst \
-	xorg-xwininfo \
-	fluidsynth dosbox sdl2_image
-	# Emulators
-	sudo pacman -S --noconfirm pcsxr pcsx2 vbam-gtk desmume dolphin-emu ppsspp
-
-wine-games:
-	# Wine
-	sudo pacman -S --noconfirm wine winetricks wine-mono wine_gecko libwbclient
-	WINEARCH=win32 winecfg ## Graphics > Capture the mouse in full screen
-	winetricks corefonts fontfix vcrun2005sp1 vcrun2008 vcrun6 dotnet20 gdiplus
-	# WoW (Wine)
-	mkdir -p /home/$(USER_NAME)/.local/share/icons/
-	wget -O wow-icon.svg http://images.wikia.com/wowwiki/images/d/d3/Wow-icon-scalable.svg
-	mv wow-icon.svg /home/$(USER_NAME)/.local/share/icons/
-	echo '#!/usr/bin/env xdg-open' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo '[Desktop Entry]' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Encoding=UTF-8' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Name=World of Warcraft' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Name[hr]=World of Warcraft' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Exec=sh -c "WINEDEBUG=-all wine /home/$(USER_NAME)/.wow-folder/wow.exe -opengl"' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	#echo 'Exec=sh -c "WINEDEBUG=-all __GL_THREADED_OPTIMIZATIONS=1 wine /home/$(USER_NAME)/.wow-folder/wow.exe -opengl"' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Icon=wow-icon.svg' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Terminal=false' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Type=Application' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'Categories=Application;Game;' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	echo 'StartupNotify=false' >> /home/$(USER_NAME)/.local/share/applications/wow.desktop
-	# OSU!
-	mkdir -p /home/$(USER_NAME)/.osu-folder
-	wget http://m1.ppy.sh/release/osume.exe
-	mv osume.exe /home/$(USER_NAME)/.osu-folder/osume.exe
-	wine /home/$(USER_NAME)/.osu-folder/osume.exe
