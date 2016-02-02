@@ -239,9 +239,6 @@ LibreOffice Writer >
 - Herramientas > Desactivar "Revisión ortográfica automática"
 - Herramientas > Opciones... > LibreOffice Writer > Fuentes básicas (occidentales) > Poner todo en Noto Sans
 
-GIMP:
-- Ventana única y columnas al gusto
-
 Telegram:
 - Cambiar a español
 - Desactivar "Mostrar la vista previa del mensaje"
@@ -251,27 +248,3 @@ Telegram:
 Skype:
 - Mensajería instantánea > Desactivar "Mostrar emoticonos"
 - Dispositivos de sonido > Desactivar "Permitir que Skype ajuste automáticamente mis niveles de mezclado"
-
-Atom:
-- Maximizar ventana y ajustar ancho del panel lateral izquierdo, de forma que el código se centre
-
-Firefox:
-- Importar marcadores
-- Quitar caja de búsqueda, Pocket y Hello de la interfaz
-- Preferencias >
-    - General > Página de inicio: Vacío
-    - Buscar > Buscador predeterminado: DuckDuckGo
-    - Privacidad > Activar "Indicar a los sitios que no quiero ser rastreado"
-    - Avanzado > General > Desactivar "Comprobar la ortografía mientras se escribe"
-- Extensiones:
-    - https://addons.mozilla.org/es/firefox/addon/adblock-plus/ (ocultarlo de la interfaz)
-    - https://addons.mozilla.org/es/firefox/addon/flagfox/
-    - (sólo si se usa GNOME) https://addons.mozilla.org/es/firefox/addon/htitle/
-- about:config
-    - middlemouse.contentLoadURL
-    - middlemouse.paste
-- Conectar todas las cuentas
-
-Steam:
-- Settings > Interface > Español (Spanish)
-- Instalar todos los juegos
