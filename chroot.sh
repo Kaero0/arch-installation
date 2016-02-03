@@ -28,7 +28,6 @@ echo "Server = http://bohoomil.com/repo/\$arch" >> /etc/pacman.conf
 pacman-key -r 962DDE58
 pacman-key --lsign-key 962DDE58
 echo "" >> /etc/pacman.conf
-echo "[atom]" >> /etc/pacman.conf
 echo "Server = http://noaxiom.org/\$repo/\$arch" >> /etc/pacman.conf
 pacman-key -r B0544167
 pacman-key --lsign-key B0544167
