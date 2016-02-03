@@ -327,7 +327,7 @@ apps:
 	# Sensors
 	sudo sensors-detect
 	# Telegram
-	wget -O telegram.tar.xz https://tdesktop.com/linux
+	wget -O telegram.tar.xz https://tdesktop.com/linux32
 	tar Jxvf telegram.tar.xz
 	rm telegram.tar.xz
 	mv Telegram ~/.telegram-folder
